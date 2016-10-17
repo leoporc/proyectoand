@@ -1,0 +1,80 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ysabel"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/ysabel_logo"
+        android:layout_width="290dp"
+        android:layout_height="162dp"
+        android:src="@drawable/homero" />
+
+    		<TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        />
+    		<EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:id="@+id/usuario"
+        />
+    		<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:password="true"
+        android:singleLine="true"
+        android:id="@+id/pass"
+        />
+
+	 <Button
+	     android:id="@+id/btnRegistrar"
+	     android:layout_width="fill_parent"
+	     android:layout_height="40dp"
+	     android:layout_marginTop="5dp"
+	     android:text="Registrarse" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:text="Login" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/salir"
+        android:text="Salir"
+        />
+    <TextView
+        android:id="@+id/badLog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#ff121a"
+        android:visibility="invisible"/>
+  	 <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:id="@+id/ysabel">
+     </ScrollView>
+</LinearLayout>
+    
