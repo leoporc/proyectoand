@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.idits.tercerproyecto"
+    package="com.idits.DondeEstas"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.idits.DondeEstas.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,11 +23,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Log_in"
+            android:name="com.idits.DondeEstas.Log_in"
             android:label="@string/title_activity_log_in" >
         </activity>
         <activity
-            android:name=".Ingreso"
+            android:name="com.idits.DondeEstas.Ingreso"
             android:label="@string/title_activity_ingreso" >
         </activity>
     </application>
