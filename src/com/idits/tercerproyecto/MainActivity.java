@@ -1,5 +1,7 @@
 package com.idits.tercerproyecto;
 
+import com.idits.tercerproyecto.R;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -16,20 +18,21 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		login(); // LLamo a la funcion para el logueo.
-		
+		registrarse(); // LLamo a la funcion para el logueo.
 		salir();
 	}
 
-	public void login() {
+	public void registrarse() {
 
-		Button Login = (Button) findViewById(R.id.btnLogin);
-		Login.setOnClickListener(new View.OnClickListener() {
+		Button Registro = (Button) findViewById(R.id.btnRegistrar);
+		Registro.setOnClickListener(new View.OnClickListener() {
 
 			@Override
 			public void onClick(View view) {
 			Intent intent = new Intent(MainActivity.this, Log_in.class);
 			Bundle bundle = new Bundle();
+			intent.putExtras(bundle);
+			startActivity(intent);
 			
 		}
 	});

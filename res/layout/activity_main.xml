@@ -11,7 +11,7 @@
         android:id="@+id/ysabel_logo"
         android:layout_width="290dp"
         android:layout_height="162dp"
-        android:src="@drawable/homero" />
+        android:src="@drawable/donde" />
 
     		<TextView
         android:layout_marginTop="10dp"
@@ -59,25 +59,11 @@
         android:text="Login" />
 
     <Button
-        android:layout_width="fill_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="5dp"
         android:id="@+id/salir"
-        android:text="Salir"
-        />
-    <TextView
-        android:id="@+id/badLog"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
         android:layout_marginTop="5dp"
-        android:textColor="#ff121a"
-        android:visibility="invisible"/>
-  	 <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:fillViewport="true"
-        android:id="@+id/ysabel">
-     </ScrollView>
+        android:text="Salir" />
+
 </LinearLayout>
     
