@@ -25,18 +25,7 @@ public class Log_in extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_log_in);
-		salir();
+		
 	}
-	public void salir(){
-	Button atras = (Button) findViewById(R.id.volver);
-	atras.setOnClickListener(new View.OnClickListener() {
-		public void onClick(View view) {
-			Intent intent = new Intent(Log_in.this, MainActivity.class);
-			Bundle bundle = new Bundle();
-			intent.putExtras(bundle);
-			startActivity(intent);
-			Log_in.this.finish();
-		}
-	});
-	}
+	
 }

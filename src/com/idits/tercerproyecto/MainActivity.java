@@ -18,7 +18,8 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		registrarse(); // LLamo a la funcion para el logueo.
+		registrarse();
+		ingreso();// LLamo a la funcion para el logueo.
 		salir();
 	}
 
@@ -36,6 +37,22 @@ public class MainActivity extends Activity {
 			
 		}
 	});
+	}
+	
+	public void ingreso(){
+	
+	Button Ingreso = (Button) findViewById(R.id.btnLogin);
+	Ingreso.setOnClickListener(new View.OnClickListener() {
+
+		@Override
+		public void onClick(View view) {
+		Intent intent = new Intent(MainActivity.this, Ingreso.class);
+		Bundle bundle = new Bundle();
+		intent.putExtras(bundle);
+		startActivity(intent);
+		
+	}
+});
 	}
 	public void salir() {
 
