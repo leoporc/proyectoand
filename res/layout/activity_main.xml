@@ -26,6 +26,7 @@
         android:layout_marginBottom="20dp"
         android:layout_marginTop="5dp"
         android:singleLine="true"
+        android:textColor="#ffffff"
         android:id="@+id/usuario"
         />
     		<TextView
@@ -40,6 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:password="true"
+        android:textColor="#ffffff"
         android:singleLine="true"
         android:id="@+id/pass"
         />
