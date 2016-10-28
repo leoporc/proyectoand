@@ -50,12 +50,16 @@ public class Log_in extends Activity {
 				// check if any of the fields are vaccant
 				if(userName.equals("")||telefono.equals("")||password.equals(""))
 				{
-						Toast.makeText(getApplicationContext(), "Field Vaccant", Toast.LENGTH_LONG).show();
+						Toast.makeText(getApplicationContext(), "Campo Vacante", Toast.LENGTH_LONG).show();
 						return;
 				}
 				    // Save the Data in Database
 				    loginDataBaseAdapter.insertEntry(userName, telefono, password);
-				    Toast.makeText(getApplicationContext(), "Account Successfully Created ", Toast.LENGTH_LONG).show();
+				    Toast.makeText(getApplicationContext(), "Cuenta creada satifactoriamente ", Toast.LENGTH_LONG).show();
+				    Intent intent = new Intent(Log_in.this, MainActivity.class);
+					 Bundle bundle = new Bundle();
+					 intent.putExtras(bundle);
+					 startActivity(intent);
 				
 			}
 		});

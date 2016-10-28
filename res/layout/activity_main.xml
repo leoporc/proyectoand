@@ -46,13 +46,7 @@
         android:id="@+id/pass"
         />
 
-	 <Button
-	     android:id="@+id/btnRegistrar"
-	     android:layout_width="fill_parent"
-	     android:layout_height="40dp"
-	     android:layout_marginTop="5dp"
-	     android:text="Registrarse" 
-	     android:textColor="#ffffff"/>
+	 
 
     <Button
         android:id="@+id/btnLogin"
@@ -62,6 +56,14 @@
         android:text="Login"
         android:textColor="#ffffff" />
 
+    <Button
+	     android:id="@+id/btnRegistrar"
+	     android:layout_width="fill_parent"
+	     android:layout_height="40dp"
+	     android:layout_marginTop="5dp"
+	     android:text="Registrarse" 
+	     android:textColor="#ffffff"/>
+    
     <Button
         android:id="@+id/salir"
         android:layout_width="fill_parent"

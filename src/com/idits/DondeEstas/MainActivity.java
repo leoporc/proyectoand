@@ -61,7 +61,7 @@ public class MainActivity extends Activity implements OnClickListener {
 				// check if the Stored password matches with  Password entered by user
 				if(password.equals(storedPassword))
 				{
-					Toast.makeText(MainActivity.this, "Congrats: Login Successfull", Toast.LENGTH_LONG).show();
+					Toast.makeText(MainActivity.this, "Felicitaciones: Login Correcto", Toast.LENGTH_LONG).show();
 					Intent intent = new Intent(MainActivity.this, Ingreso.class);
 					Bundle bundle = new Bundle();
 					intent.putExtras(bundle);
@@ -70,7 +70,7 @@ public class MainActivity extends Activity implements OnClickListener {
 				}
 				else
 				{
-					Toast.makeText(MainActivity.this, "User Name or Password does not match", Toast.LENGTH_LONG).show();
+					Toast.makeText(MainActivity.this, "Usuario o contraseña no corresponde", Toast.LENGTH_LONG).show();
 				}
 				
 				
