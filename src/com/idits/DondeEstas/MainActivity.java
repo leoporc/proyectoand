@@ -1,12 +1,25 @@
 package com.idits.DondeEstas;
 
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.util.EntityUtils;
+import org.json.JSONObject;
+
 import com.idits.DondeEstas.R;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.ContentResolver;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.Cursor;
+import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.Display;
 import android.view.View;
@@ -16,19 +29,21 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends Activity implements OnClickListener {
-
+	
+	
 	Button btnRegistrar, btnLogin, salir;
-	EditText usuario, pass;
+	EditText usuario, numero, pass;
 	LoginDataBaseAdapter loginDataBaseAdapter;
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
+		    
+		
 		loginDataBaseAdapter=new LoginDataBaseAdapter(this);
 		loginDataBaseAdapter=loginDataBaseAdapter.open();
 	 
-		
 		usuario=(EditText)findViewById(R.id.usuario);
 		pass=(EditText)findViewById(R.id.pass);	
 		btnRegistrar=(Button)findViewById(R.id.btnRegistrar);
@@ -38,7 +53,56 @@ public class MainActivity extends Activity implements OnClickListener {
 		btnLogin.setOnClickListener(this);
 		salir.setOnClickListener(this);
 	}
-
+	
+	
+	
+    
+   /** private class BuscarDatos extends AsyncTask<Void, Void, Boolean> {
+    	protected Boolean doInBackground(Void... params) {
+    	// TODO: attempt authentication against a network service.
+    	HttpClient httpClient = new DefaultHttpClient();
+    	HttpPost post = new HttpPost("http://192.168.1.34:8080/Servidor_Usuarios/Login");
+    	post.setHeader("content-type", "application/json");
+    	try
+    	{
+    	//Construimos el objeto cliente en formato JSON
+    	JSONObject dato = new JSONObject();
+    	dato.put("nombre", usuario.getText().toString());
+    	dato.put("numero", numero.getText().toString());
+    	dato.put("pass", pass.getText().toString() );
+    	StringEntity entity = new StringEntity(dato.toString());
+    	post.setEntity(entity);
+    	HttpResponse resp = httpClient.execute(post);
+    	resultado = EntityUtils.toString(resp.getEntity());
+    	}
+    	catch(Exception ex)
+    	{ Log.e("ServicioRest","Error!", ex); return false; }
+    	return true;
+    	}
+    	
+    **/
+    
+    
+    /**
+     public List<Animal> readJsonStream(InputStream in) throws IOException {
+        // Nueva instancia JsonReader
+        JsonReader reader = new JsonReader(new InputStreamReader(in, "UTF-8"));
+        try {
+            // Leer Array
+            return leerArrayAnimales(reader);
+        } finally {
+            reader.close();
+        }
+    }
+    **/
+    
+    
+    
+    
+    
+    
+    
+    
 	
 			public void onClick(View view) {
 	
