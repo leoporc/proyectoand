@@ -27,11 +27,13 @@ public final class R {
         public static final int homero=0x7f020002;
         public static final int huellas=0x7f020003;
         public static final int ic_launcher=0x7f020004;
-        public static final int lupa=0x7f020005;
-        public static final int usuario=0x7f020006;
+        public static final int logox=0x7f020005;
+        public static final int lupa=0x7f020006;
+        public static final int usuario=0x7f020007;
+        public static final int wally=0x7f020008;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000e;
+        public static final int action_settings=0x7f09000d;
         public static final int btnLogin=0x7f09000b;
         public static final int btnRegistrar=0x7f09000c;
         public static final int layout=0x7f090000;
@@ -40,7 +42,6 @@ public final class R {
         public static final int numero=0x7f090005;
         public static final int pass=0x7f090006;
         public static final int registrar=0x7f090007;
-        public static final int salir=0x7f09000d;
         public static final int textView=0x7f090003;
         public static final int textView1=0x7f090002;
         public static final int usuario=0x7f09000a;

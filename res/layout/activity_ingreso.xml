@@ -31,4 +31,29 @@
     
 </RelativeLayout>
 
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--     xmlns:tools="http://schemas.android.com/tools" -->
+<!--     android:id="@+id/layout" -->
+<!--     android:layout_width="match_parent" -->
+<!--     android:layout_height="match_parent" -->
+<!--     android:background="#3F51B5" -->
+<!--     android:orientation="horizontal" -->
+<!--     tools:context=".MainActivity" > -->
+
+<!--     <ImageView -->
+<!--         android:id="@+id/foto" -->
+<!--         android:layout_width="50dp" -->
+<!--         android:layout_height="50dp" -->
+<!--         android:padding="3dp" -->
+<!--         android:src="@drawable/usuario" /> -->
+    
+<!--     <TextView -->
+<!--         android:id="@+id/nombres_usuarios" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="50dp" -->
+<!--         android:layout_alignRight="@+id/foto" -->
+<!--         android:text="xyz" /> -->
+    
+
+<!--     </LinearLayout> -->
  

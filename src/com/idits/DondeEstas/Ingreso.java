@@ -1,7 +1,6 @@
 package com.idits.DondeEstas;
 
 
-
 import com.idits.DondeEstas.R;
 
 import android.app.Activity;

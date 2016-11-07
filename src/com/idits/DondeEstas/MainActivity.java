@@ -48,10 +48,10 @@ public class MainActivity extends Activity implements OnClickListener {
 		pass=(EditText)findViewById(R.id.pass);	
 		btnRegistrar=(Button)findViewById(R.id.btnRegistrar);
 		btnLogin=(Button)findViewById(R.id.btnLogin);
-		salir=(Button)findViewById(R.id.salir);
+		//salir=(Button)findViewById(R.id.salir);
 		btnRegistrar.setOnClickListener(this);
 		btnLogin.setOnClickListener(this);
-		salir.setOnClickListener(this);
+		//salir.setOnClickListener(this);
 	}
 	
 	
@@ -140,22 +140,22 @@ public class MainActivity extends Activity implements OnClickListener {
 				
 				}
 				
-				 if(view==salir){
-						AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-						builder.setMessage("Seguro que quiere terminar ?").setCancelable(false)
-								.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-									public void onClick(DialogInterface dialog, int id) {
-										MainActivity.this.finish();
-									}
-								}).setNegativeButton("No", new DialogInterface.OnClickListener() {
-									public void onClick(DialogInterface dialog, int id) {
-										dialog.cancel();
-									}
-								});
-
-						AlertDialog alert = builder.create();
-						alert.show();
-				 }
+//				 if(view==salir){
+//						AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+//						builder.setMessage("Seguro que quiere terminar ?").setCancelable(false)
+//								.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+//									public void onClick(DialogInterface dialog, int id) {
+//										MainActivity.this.finish();
+//									}
+//								}).setNegativeButton("No", new DialogInterface.OnClickListener() {
+//									public void onClick(DialogInterface dialog, int id) {
+//										dialog.cancel();
+//									}
+//								});
+//
+//						AlertDialog alert = builder.create();
+//						alert.show();
+//				 }
 				 
 			}
 }

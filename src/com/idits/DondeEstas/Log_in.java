@@ -99,7 +99,7 @@ public class Log_in extends Activity {
          {
          HttpClient httpClient=new DefaultHttpClient();
         // HttpPost httpPost=new HttpPost("http://10.0.2.2:8080/Servidor_Usuarios/Registro");
-         HttpPost httpPost=new HttpPost("http://192.168.1.119:8080/Servidor_Usuarios/Registro");
+         HttpPost httpPost=new HttpPost("http://192.168.1.36:8080/Servidor_Usuarios/Registro");
          
          List<NameValuePair> list=new ArrayList<NameValuePair>();
          list.add(new BasicNameValuePair("nombre", valuse[0]));

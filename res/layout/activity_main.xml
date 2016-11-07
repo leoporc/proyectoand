@@ -1,52 +1,143 @@
 
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!-- android:layout_width="match_parent" -->
+<!-- android:layout_height="match_parent" -->
+<!-- android:layout_below="@+id/ysabel" -->
+<!-- android:orientation="vertical" -->
+<!-- android:background="#252525" -->
+<!-- android:padding="10dp"> -->
+
+
+<!-- <ImageView -->
+<!-- android:id="@+id/ysabel_logo" -->
+<!-- android:layout_width="290dp" -->
+<!-- android:layout_height="162dp" -->
+<!-- android:src="@drawable/donde" /> -->
+
+
+<!-- <TextView -->
+<!-- android:layout_marginTop="10dp" -->
+<!-- android:layout_width="fill_parent" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:text="Usuario" -->
+<!-- android:textColor="#ffffff" -->
+<!-- /> -->
+<!-- <EditText -->
+<!-- android:layout_width="fill_parent" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:layout_marginBottom="20dp" -->
+<!-- android:layout_marginTop="5dp" -->
+<!-- android:singleLine="true" -->
+<!-- android:textColor="#ffffff" -->
+<!-- android:id="@+id/usuario" -->
+<!-- /> -->
+<!-- <TextView -->
+<!-- android:layout_width="fill_parent" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:text="Password" -->
+<!-- android:textColor="#ffffff" -->
+<!-- /> -->
+
+
+<!-- <EditText -->
+<!-- android:layout_width="fill_parent" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:layout_marginTop="5dp" -->
+<!-- android:password="true" -->
+<!-- android:textColor="#ffffff" -->
+<!-- android:singleLine="true" -->
+<!-- android:id="@+id/pass" -->
+<!-- /> -->
+
+
+<!-- <Button -->
+<!-- android:id="@+id/btnLogin" -->
+<!-- android:layout_width="fill_parent" -->
+<!-- android:layout_height="40dp" -->
+<!-- android:layout_marginTop="5dp" -->
+<!-- android:text="Login" -->
+<!-- android:textColor="#ffffff" /> -->
+
+
+<!-- <Button -->
+<!-- android:id="@+id/btnRegistrar" -->
+<!-- android:layout_width="fill_parent" -->
+<!-- android:layout_height="40dp" -->
+<!-- android:layout_marginTop="5dp" -->
+<!-- android:text="Registrarse" -->
+<!-- android:textColor="#ffffff"/> -->
+
+
+<!-- <Button -->
+<!-- android:id="@+id/salir" -->
+<!-- android:layout_width="fill_parent" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:layout_marginTop="5dp" -->
+<!-- android:text="Salir" -->
+<!-- android:textColor="#ffffff" /> -->
+
+
+<!-- </LinearLayout> -->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/ysabel"
-            android:orientation="vertical"
-            android:background="#252525"
-            android:padding="10dp">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/ysabel"
+    android:background="#3F51B5"
+    android:orientation="vertical"
+    android:padding="10dp" >
 
     <ImageView
         android:id="@+id/ysabel_logo"
         android:layout_width="290dp"
         android:layout_height="162dp"
-        android:src="@drawable/donde" />
+        android:src="@drawable/wally" />
 
-    		<TextView
+    <ImageView
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:src="@drawable/logox" />
+
+    <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="Usuario"
-        android:textColor="#ffffff"
-        />
-    		<EditText
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/usuario"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="5dp"
         android:singleLine="true"
-        android:textColor="#ffffff"
-        android:id="@+id/usuario"
-        />
-    		<TextView
+        android:textColor="#ffffff" />
+
+    <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Password"
-        android:textColor="#ffffff"
-        />
+        android:textColor="#ffffff" />
 
     <EditText
+        android:id="@+id/pass"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:password="true"
-        android:textColor="#ffffff"
         android:singleLine="true"
-        android:id="@+id/pass"
-        />
-
-	 
+        android:textColor="#ffffff" />
+    <!--
+         <Button
+	     android:id="@+id/btnRegistrar"
+	     android:layout_width="fill_parent"
+	     android:layout_height="40dp"
+	     android:layout_marginTop="5dp"
+	     android:text="Registrarse" 
+	     android:textColor="#ffffff"/>
+    -->
 
     <Button
         android:id="@+id/btnLogin"
@@ -56,21 +147,24 @@
         android:text="Login"
         android:textColor="#ffffff" />
 
-    <Button
-	     android:id="@+id/btnRegistrar"
-	     android:layout_width="fill_parent"
-	     android:layout_height="40dp"
-	     android:layout_marginTop="5dp"
-	     android:text="Registrarse" 
-	     android:textColor="#ffffff"/>
-    
-    <Button
+    <!--
+        <Button
         android:id="@+id/salir"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:text="Salir"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff" />
+    -->
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="Aún no te has registrado? Crealo acá"
+        android:textColor="#ffffff"
+        android:textSize="15dip" />
 
 </LinearLayout>
-    
